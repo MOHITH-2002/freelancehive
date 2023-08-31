@@ -1,3 +1,4 @@
+"use client"
 import Image from 'next/image'
 import styles from './page.module.css'
 import Link from 'next/link'
@@ -14,7 +15,7 @@ export default function Home() {
     </div>
    <div className={styles.item}>
    <div className={styles.image}> 
-   <Image fill={true} src="/undraw.png" className={styles.img} alt=""/>
+   <Image height={500} width={500} src="/undraw.png" className={styles.img} alt=""/>
 
    </div>
    </div>

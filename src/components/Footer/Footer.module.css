@@ -13,3 +13,13 @@
 .dot{
     color: #fca84f;
 }
+@media only screen and (max-width: 499px){
+    .container{
+        
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+        align-items: center;
+       
+    }
+}

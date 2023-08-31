@@ -8,6 +8,7 @@
   display: flex;
   flex-direction:column;
   gap:20px;
+  
 }
 .title{
   font-size: 60px ;
@@ -15,14 +16,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.image{
-  position: relative;
-  width: 100%;
-  height: 500px;
-  
 
-
-}
 
 .discription{
   font-size: 25px;
@@ -34,4 +28,14 @@
   cursor:pointer;
   background-color: #fca84f;
   color: black;
+}
+@media only screen and (min-width: 500px) and (max-width: 789px){
+.container{
+  flex-direction: column-reverse;
+}
+}
+@media only screen and (max-width: 499px){
+  .container{
+    flex-direction: column-reverse;
+  }
 }
