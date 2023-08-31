@@ -1,27 +1,25 @@
-'use client'
-import React from 'react'
-import useSWR from 'swr'
-import { useSession } from 'next-auth/react'
-import { useRouter } from 'next/navigation'
-import Image from 'next/image'
+import React from 'react';
+import { useSession } from 'next-auth/react';
+import { useRouter } from 'next/router';
+import useSWR from 'swr';
 import { MdDelete } from 'react-icons/md';
-import styles from "./page.module.css"
-import { MrMiyagi } from '@uiball/loaders'
-const dashboard = () => {
-        
+import Image from 'next/image';
+import { MrMiyagi } from '@uiball/loaders';
+import styles from "./page.module.css";
+
+const Dashboard = () => {
   const session = useSession();
-  const router = useRouter()
-    const fetcher = (urls) => fetch(urls).then(res => res.json())
-    const { data, mutate, error, isLoading } = useSWR(`/api/posts?email=${session?.data?.user.email}`, fetcher)
+  const router = useRouter();
+  const fetcher = (url) => fetch(url).then((res) => res.json());
+  const { data, mutate, error, isValidating } = useSWR(`/api/posts?email=${session?.data?.user.email}`, fetcher);
 
-    if(session.status === 'loading'){
-   
-      return  <MrMiyagi className={styles.loader} size={50} lineWeight={6.3} speed={1} color="#fca84f" />
+  if (session.status === 'loading') {
+    return <MrMiyagi className={styles.loader} size={50} lineWeight={6.3} speed={1} color="#fca84f" />;
+  }
 
-    }
-    if(session.status === 'unauthenticated'){
-      router?.push('/Dashboard/Login')
-    }
+  if (session.status === 'unauthenticated') {
+    router?.push('/Dashboard/Login');
+  }
     const handlePost = async (e)=>{
       e.preventDefault();
       const title = e.target[0].value
