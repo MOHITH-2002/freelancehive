@@ -9,7 +9,7 @@ export const metadata = {
 const Contact = () => {
   return (
     <div className={styles.container}>
-    <h1 className={styles.title}>Let's keep in touch</h1>
+    <h1 className={styles.title}>Let&rsquo;s keep in touch</h1>
       <div className={styles.content}>
       <div className={styles.image}>
     <Image width={350} height={300} src="/contact.jpeg" className={styles.img} alt=""/>

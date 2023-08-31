@@ -62,7 +62,7 @@ const dashboard = () => {
           isLoading ? <MrMiyagi className={styles.loader} size={50} lineWeight={6.5} speed={1} color="#fca84f" /> : data.map( (p) =>
         <div className={styles.post} key={p._id}>
         <div className={styles.image}>
-          <Image src={p.image} width={200} height={200} className={styles.img}/>
+          <Image src={p.image} width={200} height={200} className={styles.img} alt = " "/>
         </div>
         <h2 className={styles.title}>{p.title}</h2>
         
