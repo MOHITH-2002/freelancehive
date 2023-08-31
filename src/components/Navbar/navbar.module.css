@@ -35,14 +35,14 @@
 .menu{
     display: none;
 }
-@media only screen and (min-width: 790px) and (max-width: 933px){
+@media only screen and (min-width: 862px) and (max-width: 933px){
 
     .links{
         gap:20px;
     }
 }
 
-@media only screen and (min-width: 500px) and (max-width: 789px){
+@media only screen and (min-width: 500px) and (max-width: 861px){
 
 .links{
     display: none;
