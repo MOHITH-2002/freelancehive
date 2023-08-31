@@ -10,7 +10,7 @@ const About = () => {
         <Image className={styles.img} fill={true} src="https://images.pexels.com/photos/6476255/pexels-photo-6476255.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" />
      
       <div className={styles.imagetitle}>
-        <h1>&ldquo;Connecting Talent: Your Online Freelance Marketplace&rdquo;</h1>
+        <h1>Connecting Talent: Your Online Freelance Marketplace</h1>
       </div>
     </div>
     <div className={styles.works}>
