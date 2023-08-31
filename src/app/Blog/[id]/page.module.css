@@ -1,0 +1,38 @@
+.container{}
+
+.topbar{
+    display: flex;
+    gap:50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.content{
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    text-align: justify;
+    color:gray;
+    gap: 50px;
+   
+
+}
+.image{
+    flex:0.5;
+}
+.img{
+    object-fit: cover;
+}
+.userimg{
+    object-fit: cover;
+    border-radius: 50%;
+}
+.username{
+    display: flex;
+    gap:10px;
+    align-items: center;
+}
+.bottom{
+    display: flex;
+    text-align: justify;
+    margin-bottom: 50px;
+}

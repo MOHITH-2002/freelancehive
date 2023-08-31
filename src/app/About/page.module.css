@@ -1,0 +1,45 @@
+.container{
+
+}
+.image{
+    margin-top: 30px;
+    position:relative;
+    height:400px;
+    width: 100%;
+}
+.img{
+    object-fit: cover;
+    filter: grayscale(80%);
+}
+.img:hover{
+    filter: grayscale(0%);
+    transition:1s;
+}
+.imagetitle{
+    position:absolute;
+    bottom:20px;
+    left:10px;
+    background: linear-gradient(to bottom,#fca84f,lightgray);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.works{
+    display: flex;
+    
+    margin-bottom: 50px;
+    gap: 80px;
+}
+.item{
+    flex: 1;
+    display: flex;
+    margin-top: 25px;
+    flex-direction: column;
+    gap: 20px;
+}
+.Contact{
+    padding:10px;
+    width: fit-content;
+    background-color: #fca84f;
+    color: black;
+    border-radius: 5px;
+}

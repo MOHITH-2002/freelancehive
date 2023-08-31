@@ -1,0 +1,29 @@
+.container{
+    width:48px;
+    height: 23px;
+    border:1.5px solid RGB(24, 119, 242);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px;
+    position: relative;
+    cursor: pointer;
+}
+.item{
+    display: flex;
+    position: relative;
+    right: 1.5px;
+    bottom:1px;
+}
+
+.round{
+width: 18px;
+height: 18px;
+background-color:#fca84f;
+border-radius: 50%;
+
+position: absolute;
+
+
+}

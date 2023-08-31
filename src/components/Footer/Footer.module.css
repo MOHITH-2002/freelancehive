@@ -1,0 +1,15 @@
+.container{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.links{
+    display: flex;
+    gap: 15px;
+    
+}
+.dot{
+    color: #fca84f;
+}

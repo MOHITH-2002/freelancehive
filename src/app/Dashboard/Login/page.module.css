@@ -1,0 +1,49 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.input{
+    padding: 15px;
+    font-size: 20px;
+    background-color: transparent;
+    border: 1.5px solid #fca84f;
+    color: gray;
+    border-radius: 5px;
+}
+.button{
+    padding: 15px;
+    font-size: 20px;
+    background-color:#fca84f;
+    cursor: pointer;
+    
+}
+.link:hover{
+    color: gray;
+}
+.error{
+    color: red;
+}
+.google{
+    padding: 15px;
+    font-size: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    color: gray;
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    align-items: center;
+    border: 1.5px solid #fca84f;
+}
+.googlefs{
+    
+    font-size: 30px;
+}

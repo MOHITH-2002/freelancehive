@@ -1,0 +1,69 @@
+.container{
+    display: flex;
+    gap:50px;
+   
+}
+.posts{
+    display: flex;
+    flex:3;
+    flex-direction: column;
+    
+   
+}
+.form{
+    display: flex;
+  
+    flex:1.5;
+    
+    flex-direction: column;
+    
+    gap: 20px;
+}
+.input{
+    display: flex;
+    padding:15px;
+    gap: 10px;
+    background-color: transparent;
+    font-size: 20px;
+    color:gray;
+    border:1.5px solid #fca84f;
+
+}
+.posttitle{
+    color:#fca84f;
+    font-size:42px;
+}
+.textarea{
+    background-color:transparent;
+    padding:15px;
+    gap: 10px;
+    font-size: 20px;
+    color:gray;
+    border:1.5px solid #fca84f;
+
+}
+.button{
+    padding:10px;
+    background-color:#fca84f;
+    font-size: 20px;
+    cursor: pointer;
+}
+.post{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin: 40px 0;
+    /* gap:150px */
+}
+.img{
+    object-fit: cover;
+}
+.delete{
+    cursor: pointer;
+    font-size: 25px;
+}
+.delete:hover{
+    color:red;
+    transition:0.3s;
+}

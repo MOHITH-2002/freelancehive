@@ -1,0 +1,38 @@
+.container{
+    display: flex;
+    gap:50px;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+.image{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    flex: 0.5;
+}
+.img{
+    object-fit: cover;
+}
+.content{
+    display: flex;
+    flex: 1.5;
+    flex-direction: column;
+    gap: 10px;
+}
+.title{
+   
+    color:gray;
+}
+.title:hover{
+    color: #fca84f;
+    transition: 0.3s;
+}
+.discrption{
+    font-size: 18px;
+    
+}
+.discrption:hover{
+    color:rgb(14, 14, 230);
+}
