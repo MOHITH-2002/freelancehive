@@ -67,3 +67,22 @@
     color:red;
     transition:0.3s;
 }
+@media screen and (max-width:865px){
+    .container{
+        flex-direction: column-reverse;
+    }
+}
+@media screen and (max-width:636px){
+    .post{
+        flex-direction:column;
+        
+    }
+    .title{
+        display: flex;
+        margin-top:30px;
+    }
+    .delete{
+        display: flex;
+        margin-top:30px;
+    }
+}

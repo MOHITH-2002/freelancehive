@@ -5,13 +5,7 @@
     font-size: 45px;
     color: #fca84f;
 }
-.image{
-    position: relative;
-    width: 100%;
-    height:400px;
-    display: flex;
-    flex: 1;
-}
+
 .img{
     object-fit: cover;
 }
@@ -38,4 +32,14 @@
     color: black;
     max-width: fit-content;
     border-radius: 3px;
+}
+
+@media screen and (max-width:720px){
+    .items{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .items:nth-child(2n+1){
+        flex-direction: column-reverse;
+    }
 }

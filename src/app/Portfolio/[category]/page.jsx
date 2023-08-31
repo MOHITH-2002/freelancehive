@@ -28,7 +28,7 @@ const page = ({params}) => {
         <Link href="" className={styles.link}>See more</Link>
          </div>
          <div className={styles.image}>
-            <Image fill={true} className={styles.img} src={item.image} />
+            <Image width={300} height={400} className={styles.img} src={item.image} />
          </div>
     </div>
 
