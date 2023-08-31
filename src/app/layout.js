@@ -13,7 +13,7 @@ const roboto = Roboto({
 })
 
 export const metadata = {
-  title: 'Blog Agencies',
+  title: 'FreelanceHive.',
   description: 'blog',
 }
 
