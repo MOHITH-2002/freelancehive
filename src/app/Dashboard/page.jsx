@@ -1,3 +1,4 @@
+"use client"
 import React from 'react';
 import { useSession } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
@@ -11,7 +12,7 @@ const Dashboard = () => {
   const session = useSession();
   const router = useRouter();
   const fetcher = (url) => fetch(url).then((res) => res.json());
-  const { data, mutate, error, isValidating } = useSWR(`/api/posts?email=${session?.data?.user.email}`, fetcher);
+  const { data, mutate, error, isLoading } = useSWR(`/api/posts?email=${session?.data?.user.email}`, fetcher);
 
   if (session.status === 'loading') {
     return <MrMiyagi className={styles.loader} size={50} lineWeight={6.3} speed={1} color="#fca84f" />;
