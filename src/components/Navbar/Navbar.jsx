@@ -44,6 +44,10 @@ const Navbar = () => {
             <Link href="/Blog" className={styles.link}>Blog</Link>
             <Link href="/Contact" className={styles.link}>Contact</Link>
             <Link href="/Dashboard" className={styles.link}>Dashboard</Link>
+            {
+              session.status === "authenticated" &&
+            <button onClick={signOut} className={styles.logout}>Logout</button> 
+            }
       </div>
     </div>
     
