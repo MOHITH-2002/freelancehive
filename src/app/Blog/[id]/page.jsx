@@ -2,6 +2,7 @@ import React from 'react'
 import styles from "./page.module.css"
 import Image from 'next/image'
 import { notFound } from 'next/navigation'
+export const dynamic = 'force-dynamic'
 export const metadata = {
   title: 'FreelanceHive. your post description',
   description: 'blog',
@@ -17,7 +18,7 @@ async function getData(id) {
  
   return res.json()
 }
- export const dynamic = 'force-dynamic'
+ 
 
 const BlogId = async ({params}) => {
   const data = await getData(params.id)
