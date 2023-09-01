@@ -37,7 +37,7 @@ const Navbar = () => {
         </div>
          <Darkmode/>
          </div>
-      <div className={`${styles.menu } ${menuOpen ? styles.active : ''}`}>
+      <div onClick={()=>setmenu(!menuOpen)} className={`${styles.menu } ${menuOpen ? styles.active : ''}`}>
             <Link href="/" className={styles.link}>Home</Link>
             <Link href="/About" className={styles.link}>About</Link>
             <Link href="/Portfolio" className={styles.link}>Portfolio</Link>
