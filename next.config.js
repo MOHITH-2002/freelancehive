@@ -5,7 +5,8 @@ const nextConfig = {
            
             'res.cloudinary.com',
         'images.pexels.com',
-        'randomuser.me'
+        'randomuser.me',
+        'upload.wikimedia.org'
     
     ] 
     }
