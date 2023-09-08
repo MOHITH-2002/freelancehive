@@ -8,7 +8,7 @@ export const metadata = {
   description: 'blog',
 }
 async function getData(id) {
-  const res = await fetch(`http://localhost:3000/api/posts/${id}`)
+  const res = await fetch(`https://freelancehive.vercel.app/api/posts/${id}`)
   
  
   if (!res.ok) {
