@@ -3,9 +3,9 @@ import styles from "./page.module.css"
 import Image from 'next/image'
 import Link from 'next/link'
 import {notFound} from 'next/navigation'
-export const dynamic = 'force-dynamic'
+// export const dynamic = 'force-dynamic'
 const getData = async () => {
-  const res = await fetch(`https://freelancehive.vercel.app/api/posts`,{
+  const res = await fetch('https://freelancehive.vercel.app/api/posts',{
   cache: "no-store",
 })
   
@@ -27,7 +27,7 @@ const Blog = async () => {
    <Link href={`/Blog/${d._id}`} className={styles.container} key={d._id} >
     
     <div className={styles.image}>
-      <Image width={350} height={300} className={styles.img} src={d.image}/>
+      <Image width={350} height={300} className={styles.img} src={d.image} alt="" />
     </div>
     <div className={styles.content}>
       <h1 className={styles.title}>{d.title}</h1>
