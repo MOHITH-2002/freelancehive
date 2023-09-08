@@ -5,7 +5,7 @@ import Link from 'next/link'
 import {notFound} from 'next/navigation'
 export const dynamic = 'force-dynamic'
 const getData = async () => {
-  const res = await fetch('http://localhost:3000/api/posts',{
+  const res = await fetch(`https://freelancehive.vercel.app/api/posts`,{
   cache: "no-store",
 })
   
