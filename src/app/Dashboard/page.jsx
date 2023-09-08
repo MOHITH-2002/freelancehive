@@ -28,7 +28,7 @@ const Dashboard = () => {
       const image = e.target[2].value
       const content = e.target[3].value
   
-      await fetch("/api/posts",{
+      await fetch("https://freelancehive.vercel.app/api/posts",{
         method: "POST",
         body: JSON.stringify({
           email:session?.data?.user.email,
@@ -43,7 +43,7 @@ const Dashboard = () => {
     }
     const handleDelete = async (id)=>{
       try {
-        await fetch(`/api/posts/${id}`,{
+        await fetch(`https://freelancehive.vercel.app/api/posts/${id}`,{
           method: "DELETE"
         })
         mutate();
